@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  gap: 10rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.controls h1 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+.controls button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: background-color 0.2s;
+}
+
+.controls button:hover {
+  background-color: #ececec;
+}
+
+.controls label {
+  font-size: 14px;
+}
+
+.controls input[type=\"range\"] {
+  width: 100%;
+}
+
+.controls span {
+  font-size: 14px;
+  text-align: center;
+}
+
+.etch-container {
+  display: grid;
+  gap: 1px;
+  background-color: #ddd;
+  height: 25rem;
+  width: 25rem;
+}
+.etch-container div {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+}
