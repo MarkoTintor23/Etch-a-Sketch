@@ -29,11 +29,9 @@ const createGrid = function (size) {
       if (currentMode === "color") {
         square.style.backgroundColor = currentColor;
       } else if (currentMode === "random") {
-        if (!square.style.backgroundColor) {
-          square.style.backgroundColor = `#${Math.floor(
-            Math.random() * 16777215
-          ).toString(16)}`;
-        }
+        square.style.backgroundColor = `#${Math.floor(
+          Math.random() * 16777215
+        ).toString(16)}`;
       } else if (currentMode === "eraser") {
         square.style.backgroundColor = "#ffffff";
       } else if (currentMode === "clear") {
@@ -81,6 +79,7 @@ clearModeButton.addEventListener("click", function () {
     square.style.backgroundColor = "";
   });
   randomModeButton.style.backgroundColor = "#fff";
-  colorModeButton.style.backgroundColor = "#fff";
+  colorModeButton.style.backgroundColor = "rgb(112, 175, 238)";
   eraserModeButton.style.backgroundColor = "#fff";
+  currentMode = "color";
 });
