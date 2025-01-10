@@ -70,3 +70,22 @@ body {
   width: 100%;
   height: 100%;
 }
+.color-picker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.color-picker label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+#custom-color {
+  width: 60px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
